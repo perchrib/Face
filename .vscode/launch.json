@@ -31,14 +31,15 @@
             "request": "launch",
             "module": "flask",
             "env": {
-                "FLASK_APP": "app.py"
+                "FLASK_APP": "${workspaceRoot}/api/app.py"
             },
             "args": [
                 "run",
-                "--no-debugger",
+                //"--no-debugger",
                 "--no-reload"
             ],
-            "jinja": true
+            "jinja": true,
+            "console": "integratedTerminal"
         },
         {
             "name": "Python: Current File (External Terminal)",

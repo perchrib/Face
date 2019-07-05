@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h1>Take a picture</h1>
+<div class="contentarea">
+    <h1 id="result">
+        Hello Stranger
+    </h1>
+    <div class="camera">
+        <video id="video">Video stream not available.</video>
+        <button id="startbutton">Take photo</button>
+    </div>
+    <canvas id="canvas" style="display: none">
+    </canvas>
+    <div class="output">
+        <img id="photo" alt="The screen capture will appear in this box.">
+    </div>
+
+</div>
+{% endblock content %}
